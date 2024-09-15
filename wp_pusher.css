@@ -1,25 +1,73 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
 }
 body {
     background-color: rgba(240, 248, 255, 0.581);
     }
 .header {
-    padding: 10px 2px;
+    padding: 15px 2px;
     border-bottom: 1px solid rgba(146, 146, 146, 0.322);
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    color: rgb(25, 25, 78);
 }
-div.logo {
+.logo { 
+    margin-left: 1rem;
+    position: relative;
+    background-color: rgb(215, 231, 245);
+    width: 3rem;
+    height: 1.3rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.logo::after {
+    content: "";
+    position: absolute;
+    bottom: -55%;
+    left: -25%;
+    z-index: -1;
+    border: 5px solid  rgb(131, 166, 255);
+    border-top-width: 0;
+    border-left-width: 0.1rem;
+    border-right-width: 0.01rem;
+    border-radius: 50%;
+    background-color:rgb(25, 25, 78);
+    width: 4.3rem;
+    height: 1.5rem;
+
+}
+.logo::before {
+    content: "";
+    position: absolute;
+    bottom: 48%;
+    left: 1%;
+    z-index: 1;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 253, 253);
+    width: 2.315rem;
+    height: 0.5rem;
+
+}
+.cap {
     display: flex;
-    color: rgb(46, 38, 74);
-    font-size: 11px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
 }
+.logo_name{
+    color: rgb(25, 25, 78);
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .header nav ul li {
     display: inline;
     /* padding: 0 5px; */
@@ -28,6 +76,7 @@ div.logo {
     padding: 5px;
         color: inherit;
         text-decoration: none;
+        font-weight: 600;
        
     }
  .header nav ul li:hover {
@@ -143,12 +192,12 @@ button:hover {
     background-color: darkgrey;
     text-align: center;
     color: white;
-    font-size: 8px;
+    font-size: 0.5rem;
     border-radius: 3px;
 }
 .stripe {
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .pue {
     opacity: 0.7;
@@ -172,15 +221,15 @@ div.blue_set {
     margin: 20px auto 0px;
     width: 90%;
     background-color:  rgb(50, 120, 171);
-    font-size: 12px;
+    font-size: 0.75rem;
     opacity: 0.8;
 }
 .blue p {
-    margin-block: 15px;
+    margin-block: 0.9375rem;
 }
 .number {
-    font-size: 38px;
-    padding-inline-end: 7px;
+    font-size: 2.375rem;
+    padding-inline-end: 0.4375rem;
 }
 .italize {
     font-style: oblique;
@@ -202,7 +251,7 @@ div.blue_set {
 footer {
     width: 350px;
     margin: -15px auto 30px;
-    font-size: 14px;
+    font-size: 0.875;
     opacity: 0.6;
 }
 footer p a {
@@ -214,14 +263,14 @@ footer p a {
     padding-top: 10px;
 }
 sup.sup {
-    font-size: 20px;
+    font-size: 1.25rem;
     position: relative;
     top: -5px;
 }
 p a {
     color: inherit;
     }
-@media(max-width: 540px) {
+@media(max-width: 552px) {
         .the_main {
             display: flex;
             flex-direction: column;
@@ -233,6 +282,9 @@ p a {
             grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
             gap: 5px;
         }
+        .white {
+            width: 100%;
+        }
         .blue {
             width: 60%;
             
@@ -243,7 +295,7 @@ p a {
             justify-content: center;
             
         }
-        .logo {
+        .cap {
             place-content: center;
         }
     }

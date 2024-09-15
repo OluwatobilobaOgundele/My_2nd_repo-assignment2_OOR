@@ -2,37 +2,53 @@ body {
     background-color: black;
     color: white;
 }
-.logo { margin: 100px;
+.logo { 
+    margin-left: 1rem;
     position: relative;
     background-color: rgb(215, 231, 245);
-    width: 40px;
-    height: 30px;
+    width: 3rem;
+    height: 1.3rem;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
 .logo::after {
     content: "";
     position: absolute;
-    bottom: -8px;
-    left: -15px;
+    bottom: -55%;
+    left: -20%;
     z-index: -1;
-    border: 5px solid  rgb(168, 160, 238);
+    border: 5px solid  rgb(131, 166, 255);
+    border-top-width: 0;
+    border-left-width: 0.01rem;
+    border-right-width: 0.001rem;
     border-radius: 50%;
-    background-color:rgb(58, 58, 84);
-    width: 60px;
-    height: 15px;
+    background-color:rgb(25, 25, 78);
+    width: 4.3rem;
+    height: 25px;
 
 }
 .logo::before {
     content: "";
     position: absolute;
-    bottom: 15px;
-    left: 0px;
+    bottom: 48%;
+    left: 1%;
     z-index: 1;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 50%;
     background-color: rgb(255, 253, 253);
-    width: 30px;
-    height: 15px;
+    width: 2.315rem;
+    height: 0.5rem;
 
+}
+.cap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.logo_name{
+    color: rgb(25, 25, 78);
+    font-weight: 800;
+    font-size: 1.99rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
