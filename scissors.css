@@ -1,54 +1,60 @@
-body {
-    background-color: black;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {background-color: white;
 }
 .logo { 
-    margin-left: 1rem;
+    margin: 0.8rem;
     position: relative;
     background-color: rgb(215, 231, 245);
-    width: 3rem;
-    height: 1.3rem;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-.logo::after {
+    width: 0.7rem;
+    height: 0.9rem;
+    border: 2px solid blue;
+    transform: rotate(45deg);
+   }
+ .logo::after {
     content: "";
     position: absolute;
-    bottom: -55%;
-    left: -20%;
-    z-index: -1;
-    border: 5px solid  rgb(131, 166, 255);
-    border-top-width: 0;
-    border-left-width: 0.01rem;
-    border-right-width: 0.001rem;
-    border-radius: 50%;
-    background-color:rgb(25, 25, 78);
-    width: 4.3rem;
-    height: 25px;
-
+    top: -8px;
+    right: 2.9px;
+    background-color: blue;
+    width: 2px;
+    height: 10px;
+  
 }
 .logo::before {
     content: "";
     position: absolute;
-    bottom: 48%;
-    left: 1%;
-    z-index: 1;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    background-color: rgb(255, 253, 253);
-    width: 2.315rem;
-    height: 0.5rem;
-
+    top: 8px;
+    right: 2.9px;
+    background-color: blue;
+    width: 2px;
+    height: 10px;
 }
 .cap {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 2px;
 }
 .logo_name{
-    color: rgb(25, 25, 78);
+    color: blue;
     font-weight: 800;
-    font-size: 1.99rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.logo_name::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    width: 2px;
+    z-index: 1;
+    height: 20px;
+    background-color: blue;
 }
