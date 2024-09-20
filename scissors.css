@@ -7,6 +7,8 @@
     font-family: 'Roboto', sans-serif;
 }
 body {background-color: white;
+    max-width: 800px;
+    margin-inline: auto;
 }
 .logo { 
     margin: 0.8rem;
@@ -88,6 +90,10 @@ a[href="try"] {
     background-color:  rgb(43, 151, 227);
     border-radius: 20px;
     padding: 5px;
+}
+main {
+    max-width: 800px;
+    margin-inline: auto;
 }
 .first1 {
     background-color: whitesmoke;
@@ -356,3 +362,185 @@ p.shift:nth-child(5) {
     font-size: 14px;
     font-weight: 800;
 }
+.why {
+    width: 220px;
+}
+.why p {
+    font-size: 10px;
+}
+.why h3 {
+    margin-block: 10px;
+    position: relative;
+}
+.why h3::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 1.5px;
+    width: 5px;
+    height: 19px;
+    background: linear-gradient(blue, black);
+}
+.why h3 span {
+    color: blue;
+}
+.others {
+    width: 200px;
+    font-size: 10px;
+}
+.others span {
+    font-size: initial;
+    font-weight: 700;
+    display: block;
+    margin-block: 10px;
+}
+.four4 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.five5 {
+    width: 50%;
+    margin: 20px auto;
+}
+.five5 p {
+    font-size: 10px;
+    text-align: center;
+}
+.five5 h3 {
+    margin-inline: auto;
+    position: relative;
+    width: 260px;
+}
+.five5 h3 span {
+    
+    color: blue;
+}
+.five5 h3::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 1.5px;
+    width: 3px;
+    height: 19px;
+    background: linear-gradient(blue, black);
+}
+.six6 {
+    display: flex;
+    justify-content: center;
+    margin-block: 40px;
+}
+.six6 div {
+    padding: 20px 10px;
+    border: 1px solid rgba(43, 96, 161, 0.416);
+    width: 182px;
+    border-radius: 5px;
+    font-size: 10px;
+    letter-spacing: -0.01rem;
+}
+.six6 div.real {
+    padding-top: 40px;
+    border: none;
+    background-color: rgb(55, 76, 124);
+    font-size: 8px;
+    color: white;
+    transform: scaleY(1.2);
+}
+.six6 p span {
+    display: block;
+}
+.six6 ul li {
+    padding: 10px 5px;
+    list-style-position: inside;
+}
+.six6 div p span.bold {
+    font-weight: 900;
+    font-size: 16px;
+    margin-block: 20px 15px;
+}
+.seven7 {
+    margin-block: 65px 50px;
+    text-align: center;
+    font-size: 8px;
+}
+.seven7 a[href="#7"] {
+    border: 1px solid;
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+.seven7 a[href="#8"] {
+    background-color: blue;
+    margin-right: 10px;
+    padding: 6px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nine9 {
+    padding-top: 20px;
+    font-size: 6px;
+    height: 200px;
+    background: linear-gradient(200deg, rgb(19, 86, 141), rgb(12, 35, 44));
+}
+.nine9 form {
+    background-color: white;
+    margin: auto;
+    width: 45%;
+    height: 160px;
+    padding: 20px;
+    border-radius: 7px;
+}
+input, select, button {
+    font-size: inherit;
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+input#url, button {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+select, input#alias {
+    width: 46.2%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    height: 20px;
+}
+button {
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+}
+form p {
+    color: blue;
+}
+form p a {
+    color: inherit;
+    text-decoration: none;
+}
+.ten {
+    width: 60%;
+    margin-inline: auto;
+    margin-block: 20px;
+    font-size: 50%;
+    }
+    .ten details {
+        padding-block: 10px;
+        border-bottom: 1px solid wheat;
+        }
+    .ten h2 {
+        text-align: center;
+    }
+    .ten details summary::marker {
+        content: "+";
+        font-size: 12px;
+    }
+   .ten details[open] summary::marker {
+        content: "-";
+        font-size: 12px;
+        text-align: right;
+    }
