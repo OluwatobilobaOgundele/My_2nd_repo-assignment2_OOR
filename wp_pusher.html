@@ -47,8 +47,11 @@
                 <legend><div class="two">2</div> Your Payment Information </legend>
                 <div class="credit_card">
                 <label for="credit_card">Credit Card</label><br>
-                <input type="number" name="credit_card" id="credit_card" placeholder="Card Number" pattern="[0-9]{2}/[0-9]{2}-[0-9]{3}">
+                <div class="flex">
+                <input type="number" name="credit_card" id="credit_card" placeholder="Card Number">
+                <input type="number" name="credit_card" id="mm" placeholder="MM/YY"><input type="number" name="credit_card" id="cvc" placeholder="CVC">
                 </div>
+            </div>
             </fieldset>
             <button>Buy WP Pusher</button>
         </form>

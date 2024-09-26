@@ -153,6 +153,9 @@ input[type="text"], input[type="email"], input[type="number"] {
     border: none;
     opacity: 0.7;
 }      
+input[type="text"], input[type="email"] {
+    border-radius: 0.3rem;
+}
 input[type="number"] {
     width: 100%;
 }
@@ -161,6 +164,10 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover 
 } 
 .firstname, .lastname, .email, .credit_card {
     margin-block: 10px;
+}
+div.flex {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
 }
 button {
     margin-block: 20px 30px;
