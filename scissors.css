@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body {background-color: white;
+    min-width: 561px;
     max-width: 800px;
     margin-inline: auto;
 }
@@ -533,9 +534,21 @@ form p a {
     .ten details {
         padding-block: 10px;
         border-bottom: 1px solid wheat;
+        
     }
     .ten h2 {
-        text-align: center;
+        margin-inline: auto;
+        width: 40px;
+        position: relative;
+    }
+    .ten h2::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 1.5px;
+        width: 3px;
+        height: 19px;
+        background: linear-gradient(blue, black, whitesmoke);
     }
     .ten details summary {   
         list-style: none;    
@@ -666,11 +679,12 @@ div.footer {
 }
 footer .last {
     text-align: right;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    margin-right: 2.5rem;
 }
 footer .last a {
     text-decoration: none;
-    margin: 0.7rem;
+    margin: 0.1rem;
     color: black;
 }
    
