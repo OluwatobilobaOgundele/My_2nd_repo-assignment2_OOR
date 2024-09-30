@@ -542,6 +542,7 @@ form p a {
         display: flex;
         justify-content: space-between;
         flex-flow: row-reverse; 
+        cursor: pointer;
     }
     .ten details summary::before {
         content: "+";
