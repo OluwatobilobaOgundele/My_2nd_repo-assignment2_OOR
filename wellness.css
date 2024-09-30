@@ -52,7 +52,7 @@ button {
     }
 img {
     margin-block: 30px;
-    min-width: fit-content;
+    min-width: 15%;
 }
 img:hover {
     transform: rotate(90deg);

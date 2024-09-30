@@ -116,7 +116,7 @@ legend {
     gap: 8px;
     align-items: center;
 }
-div.one, div.two, div.que {
+span.one, span.two, p.que {
     border: 1px solid rgb(74, 90, 117);
     border-radius: 50px;
     width: 20px;
@@ -224,7 +224,10 @@ button:hover {
     left: 0px;
     width: 65px;
 }
-div.blue_set {
+h3 {
+    font-weight: 400;
+}
+div.blue_set, h3 {
     margin: 20px auto 0px;
     width: 90%;
     background-color:  rgb(50, 120, 171);
