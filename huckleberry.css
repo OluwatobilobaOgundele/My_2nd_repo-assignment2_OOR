@@ -71,28 +71,3 @@ span {
  p {
     margin-block-end: 16px;  
 }
-/* .emy, .emx {
-       max-width: 415px;
-    }
-    p.emx {
-        margin-block-end: 30px;
-    }
-@media(max-width : 800px) {
-    h2 {
-        left: 1px;
-        width: 360px;
-    }
-    .heading, .emm, .emn {
-        padding-left: 20px;
-    }
-}
-@media(max-width : 380px) {
-    h2 {
-        width: 300px;
-    }
-}
-@media(max-width : 320px) {
-    h2 {
-        width: 280px;
-    }
-} */ */
